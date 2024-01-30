@@ -2,14 +2,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn import datasets
+from sklearn.datasets import make_moons
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from matplotlib.colors import ListedColormap
 
 # 数据生成
-# X, y = datasets.make_moons(noise=0.3, random_state=0)
-X, y = datasets.make_moons(noise=0.3)
+# X, y = make_moons(noise=0.3, random_state=0)
+X, y = make_moons(noise=0.3)
+
+print("X=", X)
 
 
 # 拆分训练和测试数据
