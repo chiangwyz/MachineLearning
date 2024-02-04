@@ -48,5 +48,4 @@ plt.scatter(X_train[:, 0], X_train[:, 1], c=y_train, cmap=cmap_bold, edgecolor='
 plt.xlim(xx.min(), xx.max())
 plt.ylim(yy.min(), yy.max())
 plt.title(f"2-Class classification (k = {k}, weights = 'uniform')")
-
 plt.show()
